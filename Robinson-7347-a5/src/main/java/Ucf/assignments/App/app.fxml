@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+
+<GridPane fx:controller="Ucf.assignments.App.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+
+    <Label text="Inventory Tracker" GridPane.columnIndex="0"
+           GridPane.rowIndex="0" GridPane.columnSpan="2"
+           GridPane.rowSpan="1" GridPane.halignment="CENTER" >
+    </Label>
+
+    <Label text="Item Name: " GridPane.columnIndex="0"
+           GridPane.rowIndex="1" >
+    </Label>
+
+    <!-- Add name text field. -->
+    <TextField fx:id="nameField" prefHeight="40"
+               GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+
+    <!-- Add serial number label. -->
+    <Label text="Serial Number: " GridPane.columnIndex="0"
+           GridPane.rowIndex="2" >
+    </Label>
+
+    <!-- Add serial field. -->
+    <TextField fx:id="serialField" prefHeight="40"
+               GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <!-- Add value label. -->
+    <Label text="Value: " GridPane.columnIndex="0"
+           GridPane.rowIndex="3" >
+    </Label>
+
+    <!-- Add price field for the GUI. -->
+    <TextField fx:id="priceField" prefHeight="40"
+               GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+
+    <!-- Develop the submit button. -->
+    <Button fx:id="submitButton" text="Submit"
+            prefWidth="100" prefHeight="40" defaultButton="true"
+            GridPane.columnIndex="0" GridPane.rowIndex="4"
+            GridPane.columnSpan="2" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER">
+        <GridPane.margin>
+            <Insets top="20" right="0" bottom="20" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+</GridPane>
