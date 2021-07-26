@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Ucf.assignments.App.Table"
+            prefHeight="400.0" prefWidth="600.0">
+    <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+    <Label text="Inventory Entry"
+           GridPane.columnIndex="0" GridPane.rowIndex="0">
+    </Label>
+    <TableView fx:id="tableView" GridPane.columnIndex="0"
+               GridPane.rowIndex="1">
+        <columns>
+            <TableColumn text="Name">
+            </TableColumn>
+            <TableColumn text="Serial Number">
+            </TableColumn>
+            <TableColumn text="Price">
+            </TableColumn>
+        </columns>
+        items>
+        <FXCollections fx:factory="observableArrayList">
+        </FXCollections>
+    </TableView>
+</AnchorPane>
